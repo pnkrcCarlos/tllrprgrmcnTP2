@@ -10,6 +10,8 @@ namespace EJ1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("(TP2/EJ1)");
+
         }
     }
 }

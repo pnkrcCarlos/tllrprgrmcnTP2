@@ -57,10 +57,7 @@ namespace EJ1
 
         public double Perimetro
         {
-            get
-            {
-                return this.LadoA + this.LadoB + this.LadoC;
-            }
+            get { return this.LadoA + this.LadoB + this.LadoC; }
         }
 
         public double Area

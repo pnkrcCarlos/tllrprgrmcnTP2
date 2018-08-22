@@ -22,13 +22,13 @@ namespace EJ1
         public Punto Centro
         {
             get { return this.iCentro; }
-            set { this.iCentro = value; }
+            //set { this.iCentro = value; }
         }
 
         public double Radio
         {
             get { return this.iRadio; }
-            set { this.iRadio = value; }
+            //set { this.iRadio = value; }
         }
 
         public double Perimetro

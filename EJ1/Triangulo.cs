@@ -25,19 +25,19 @@ namespace EJ1
         public Punto A
         {
             get { return this.iA; }
-            set { this.iA = value; }
+            //set { this.iA = value; }
         }
 
         public Punto B
         {
             get { return this.iB; }
-            set { this.iB = value; }
+            //set { this.iB = value; }
         }
 
         public Punto C
         {
             get { return this.iC; }
-            set { this.iC = value; }
+            //set { this.iC = value; }
         }
 
         private double LadoA

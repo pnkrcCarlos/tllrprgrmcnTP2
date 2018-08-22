@@ -22,13 +22,13 @@ namespace EJ1
         public double X
         {
             get { return this.iX; }
-            set { this.iX = value; }
+            //set { this.iX = value; }
         }
 
         public double Y
         {
             get { return this.iY; }
-            set { this.iY = value; }
+            //set { this.iY = value; }
         }
 
         public double CalcularDistanciaDesde(Punto pPunto)

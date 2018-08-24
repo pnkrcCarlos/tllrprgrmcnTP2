@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E9EB18B2-7163-42DD-A2DE-51815F7DAD63}</ProjectGuid>
+    <ProjectGuid>{A9C31904-42AC-467F-ACEE-08C7D08D55D1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EJ1</RootNamespace>
-    <AssemblyName>EJ1</AssemblyName>
+    <RootNamespace>EJ2</RootNamespace>
+    <AssemblyName>EJ2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,12 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circulo.cs" />
-    <Compile Include="CalculadoraGeometrica.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Cuenta.cs" />
+    <Compile Include="Cuentas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Punto.cs" />
-    <Compile Include="Triangulo.cs" />
+    <Compile Include="TipoDocumento.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

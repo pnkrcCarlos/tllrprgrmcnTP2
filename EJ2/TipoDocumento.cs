@@ -8,10 +8,10 @@ namespace EJ2
 {
     enum TipoDocumento
     {
-        DNI = 1,
-        CUIT = 2,
-        CUIL = 3,
-        LE = 4,
-        LC = 5
+        DNI,
+        CUIT,
+        CUIL,
+        LE,
+        LC
     }
 }

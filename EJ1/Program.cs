@@ -11,7 +11,6 @@ namespace EJ1
         private static CalculadoraGeometrica calcuGeo = new CalculadoraGeometrica();
         static void Main(string[] args)
         {
-            //Console.WriteLine("(TP2/EJ1)");
             char input;
             do
             {
@@ -54,21 +53,25 @@ namespace EJ1
             double ax, ay, bx, by, cx, cy;
             Console.Clear();
             Console.WriteLine("(Triangulos)");
+
             // A
             Console.Write("A_x = ");
             ax = Convert.ToDouble(Console.ReadLine());
             Console.Write("A_y = ");
             ay = Convert.ToDouble(Console.ReadLine());
+
             // B
             Console.Write("B_x = ");
             bx = Convert.ToDouble(Console.ReadLine());
             Console.Write("B_y = ");
             by = Convert.ToDouble(Console.ReadLine());
+
             // C
             Console.Write("C_x = ");
             cx = Convert.ToDouble(Console.ReadLine());
             Console.Write("C_y = ");
             cy = Convert.ToDouble(Console.ReadLine());
+
             // Triangulo
             Console.WriteLine("Perimetro = {0}", calcuGeo.PerimetroTriangulo(ax, ay, bx, by, cx, cy));
             Console.WriteLine("Area = {0}", calcuGeo.AreaTriangulo(ax, ay, bx, by, cx, cy));

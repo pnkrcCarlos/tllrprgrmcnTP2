@@ -8,58 +8,73 @@ namespace EJ1
 {
     class Triangulo
     {
-        // Le cambie los nombres a los puntos
-        private Punto iA;
-        private Punto iB;
-        private Punto iC;
+        private Punto iPunto1;
+        private Punto iPunto2;
+        private Punto iPunto3;
 
-        public Triangulo() : this(new Punto(), new Punto(), new Punto()) { }
-
+        /// <summary>
+        /// Inicializa una nueva instancia de la clase Triangulo con los puntos que lo definen indicados por los parámetros.
+        /// </summary>
+        /// <param name="pA">Punto 1 (A) del triángulo.</param>
+        /// <param name="pB">Punto 2 (B) del triángulo.</param>
+        /// <param name="pC">Punto 3 (C) del triángulo.</param>
         public Triangulo(Punto pA, Punto pB, Punto pC)
         {
-            this.iA = pA;
-            this.iB = pB;
-            this.iC = pC;
+            this.iPunto1 = pA;
+            this.iPunto2 = pB;
+            this.iPunto3 = pC;
         }
 
-        public Punto A
+        /// <summary>
+        /// Devuelve el punto 1 (A) del triángulo.
+        /// </summary>
+        public Punto Punto1 // A
         {
-            get { return this.iA; }
-            //set { this.iA = value; }
+            get { return this.iPunto1; }
         }
 
-        public Punto B
+        /// <summary>
+        /// Devuelve el punto 2 (B) del triángulo.
+        /// </summary>
+        public Punto Punto2 // B
         {
-            get { return this.iB; }
-            //set { this.iB = value; }
+            get { return this.iPunto2; }
         }
 
-        public Punto C
+        /// <summary>
+        /// Devuelve el punto 3 (C) del triángulo.
+        /// </summary>
+        public Punto Punto3 // C
         {
-            get { return this.iC; }
-            //set { this.iC = value; }
+            get { return this.iPunto3; }
         }
 
-        private double LadoA
+        private double LadoA // a
         {
-            get { return this.B.CalcularDistanciaDesde(this.C); }
+            get { return this.Punto2.CalcularDistanciaDesde(this.Punto3); }
         }
 
-        private double LadoB
+        private double LadoB // b
         {
-            get { return this.A.CalcularDistanciaDesde(this.C); }
+            get { return this.Punto1.CalcularDistanciaDesde(this.Punto3); }
         }
 
-        private double LadoC
+        private double LadoC // c
         {
-            get { return this.A.CalcularDistanciaDesde(this.B); }
+            get { return this.Punto1.CalcularDistanciaDesde(this.Punto2); }
         }
 
+        /// <summary>
+        /// Devuelve perímetro del triángulo.
+        /// </summary>
         public double Perimetro
         {
             get { return this.LadoA + this.LadoB + this.LadoC; }
         }
 
+        /// <summary>
+        /// Devuelve el área del triángulo.
+        /// </summary>
         public double Area
         {
             get
